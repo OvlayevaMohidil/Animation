@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .point{
+            width: 100%;
+            height: 600px;
+            /* background-color: antiquewhite; */
+            
+            
+
+        }
+        .point1{
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background-color: blue;
+            margin-left: 30px;
+            animation: point 1s  alternate infinite ;
+        }
+        
+        .point3{
+            animation-delay: 1s;
+        }
+        .point4{
+            animation-delay: 1.2s;
+        }
+        .point5{
+            animation-delay: 1.4s;
+        }
+        .point6{
+            animation-delay: 1.6s;
+        }
+        .point7{
+            animation-delay: 1.8s;
+        }
+        .point-1{
+            /* background-color: blue; */
+            width: 250px;
+            height: 50px;
+            display: flex;
+            position: relative;
+            top: 300px;
+            left: 600px;
+        }
+        @keyframes point {
+            
+            100%{
+                transform: scale(2);
+            }
+        }
+   </style>
+<body>
+    <div class="point">
+        <div class="point-1">
+        <div class="point1 point3" style="background-color: yellow; box-shadow: 0px 0px  15px rgb(255, 51, 0);"></div>
+        <div class="point1 point4" style="background-color: rgb(105, 224, 185);box-shadow: 0px 0px  15px rgb(1, 255, 170)"></div>
+        <div class="point1 point5" style="background-color: aqua;box-shadow: 0px 0px  15px rgb(0, 153, 255);"></div>
+        <div class="point1 point6" style="background-color: red;box-shadow: 0px 0px  15px rgb(255, 0, 0);"></div>
+        <div class="point1 point7" style="background-color: palevioletred;box-shadow: 0px 0px  15px rgb(238, 0, 238);"></div>
+      </div>
+    </div>
+</body>
+</html>
